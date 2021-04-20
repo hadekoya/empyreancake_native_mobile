@@ -1,0 +1,305 @@
+{
+  "about": [
+    {
+      "id": 0,
+      "header": "",
+      "description": "Empyrean Cakes was born out of a curiosity in baking and a desire to eat and share with our family, delicious homemade treats whenever I wanted. What started out as an experiment eventually evolved into a passion. Our red velvet cake the most requested flavor and is still the #1 seller in the shop. Of course, we dont just stop at one flavor. We are glad to be able to share these delicious, moist and uniquely flavored cake creations with you. These days, we start every day with the purest of ingredients, from 100% Madagascar bourbon vanilla, dark rich cocoa, seasonal fruits, exotic spices and the freshest dairy and eggs we can find. We bake everything from scratch, all day long, in small throughout the day to ensure you get your cakes and cupcakes as fresh as possible. Our delectable treats are always free from preservatives, artificial flavorings and trans fats. Come in and try something with a cup of cold milk or a cup of fair trade organic hot or iced coffee sourced from a local roaster.",
+      "image": "images/store.png"
+    },
+    {
+      "id": 1,
+      "header": "",
+      "description": "Empyrean Cakes is the leading cake decorating and sugarcraft store in North New Jersey. We offer a fabulous range of cake decorations (Birthday Cake, Wedding Cake, 3D Cake, Cup Cake) - with super fast delivery available. With so many cake decorating options, we are sure you will find what you are looking for. Our friendly customers service team are here to help if you need any advice.",
+      "image": "images/customer service.png"
+    }
+  ],
+  "features": [
+    {
+      "id": 0,
+      "header": "Birthday",
+      "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem accusantium commodi dicta maiores maxime reiciendis quia voluptatem ipsam facere laborum fugiat aperiam assumenda tempore temporibus cum accusamus eligendi, consequatur beatae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores non repellat ad repellendus. Eaque blanditiis inventore totam veritatis, reprehenderit dignissimos fugiat? Soluta, fugiat in! Molestiae non repudiandae aut. Et, earum. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "image": "images/jibbs-item.png"
+    },
+    {
+      "id": 1,
+      "header": "Weddings",
+      "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem accusantium commodi dicta maiores maxime reiciendis quia voluptatem ipsam facere laborum fugiat aperiam assumenda tempore temporibus cum accusamus eligendi, consequatur beatae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores non repellat ad repellendus. Eaque blanditiis inventore totam veritatis, reprehenderit dignissimos fugiat? Soluta, fugiat in! Molestiae non repudiandae aut. Et, earum. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "image": "images/wedding-cake.png"
+    }
+  ],
+  "cakes": [
+    {
+      "id": 0,
+      "name": "Seaside Clam Cake",
+      "price": "$33.50",
+      "category": "Custom Cake",
+      "visible": true,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!",
+      "image": "images/clamshell.png",
+      "thumbnail": "images/chrome-river.jpg",
+      "ratings": "3"
+    },
+    {
+      "id": 1,
+      "name": "Dynosaur Train Cake",
+      "price": "$24.99",
+      "category": "Birthday Cake",
+      "visible": true,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!",
+      "image": "images/jibbs-item.png",
+      "thumbnail": "images/jibbs-item.png",
+      "ratings": "4"
+    },
+    {
+      "id": 2,
+      "name": "Fresh Fruit Cake",
+      "price": "$40.20",
+      "category": "Birthday Cake",
+      "visible": true,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!",
+      "image": "images/fruit.png",
+      "thumbnail": "images/chrome-river.jpg",
+      "ratings": "3"
+    },
+    {
+      "id": 3,
+      "name": "Frozen Theme Cake",
+      "price": "$54.20",
+      "category": "Birthday Cake",
+      "visible": true,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!",
+      "image": "images/frozen.png",
+      "thumbnail": "images/chrome-river.jpg",
+      "ratings": "4"
+    },
+    {
+      "id": 4,
+      "name": "Wedding Cake",
+      "price": "$300.20",
+      "category": "Wedding Cake",
+      "visible": true,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!",
+      "image": "images/wedding-cake.png",
+      "thumbnail": "images/chrome-river.jpg",
+      "ratings": "5"
+    },
+    {
+      "id": 5,
+      "name": "Voodoo Donuts",
+      "price": "$300.20",
+      "category": "Cup Cake",
+      "visible": true,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!",
+      "image": "images/kelly-item.png",
+      "thumbnail": "images/chrome-river.jpg",
+      "ratings": "4"
+    },
+    {
+      "id": 7,
+      "name": "Cup cakes",
+      "price": "$30.10",
+      "category": "Cup Cake",
+      "visible": true,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!",
+      "image": "images/deva-item.png",
+      "thumbnail": "images/chrome-river.jpg",
+      "ratings": "3"
+    },
+    {
+      "id": 8,
+      "name": "Butter Cream Cake",
+      "price": "$60.00",
+      "category": "Custom Cake",
+      "visible": true,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!",
+      "image": "images/logan-item.png",
+      "thumbnail": "images/chrome-river.jpg",
+      "ratings": "4"
+    },
+    {
+      "id": 9,
+      "name": "Moustache Cake",
+      "price": "$60.00",
+      "category": "Custom Cake",
+      "visible": true,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!",
+      "image": "images/moustache.png",
+      "thumbnail": "images/chrome-river.jpg",
+      "ratings": "5"
+    }
+  ],
+  "comments": [
+    {
+      "id": 0,
+      "productId": 0,
+      "rating": 5,
+      "text": "What a magnificent view!",
+      "author": "Tinus Lorvaldes",
+      "date": "2018-10-25T16:30Z"
+    },
+    {
+      "id": 1,
+      "productId": 0,
+      "rating": 4,
+      "text": "The campground was beautiful, but the bugs could bite sometimes.",
+      "author": "Brennen Ech",
+      "date": "2017-06-17T03:33Z"
+    },
+    {
+      "id": 2,
+      "productId": 0,
+      "rating": 5,
+      "text": "I caught a world-record-breaking trout here on my last visit.",
+      "author": "McKenzie Sebastian",
+      "date": "2019-02-18T18:12Z"
+    },
+    {
+      "id": 3,
+      "productId": 0,
+      "rating": 5,
+      "text": "A wonderful place to reconnect with nature.",
+      "author": "Jordan Runn",
+      "date": "2019-08-04T20:11Z"
+    },
+    {
+      "id": 4,
+      "productId": 0,
+      "rating": 4,
+      "text": "The stars at night were a revelation!",
+      "author": "Ann Dabramov",
+      "date": "2018-07-23T19:44Z"
+    },
+    {
+      "id": 5,
+      "productId": 1,
+      "rating": 4,
+      "text": "The campground was beautiful, but the bugs could bite sometimes.",
+      "author": "Brennen Ech",
+      "date": "2017-06-17T03:33Z"
+    },
+    {
+      "id": 6,
+      "productId": 1,
+      "rating": 5,
+      "text": "I caught a world-record-breaking trout here on my last visit.",
+      "author": "McKenzie Sebastian",
+      "date": "2019-02-18T18:12Z"
+    },
+    {
+      "id": 7,
+      "productId": 1,
+      "rating": 5,
+      "text": "A wonderful place to reconnect with nature.",
+      "author": "Jordan Runn",
+      "date": "2019-08-04T20:11Z"
+    },
+    {
+      "id": 8,
+      "productId": 1,
+      "rating": 4,
+      "text": "The stars at night were a revelation!",
+      "author": "Ann Dabramov",
+      "date": "2018-07-23T19:44Z"
+    },
+    {
+      "id": 9,
+      "productId": 1,
+      "rating": 5,
+      "text": "What a magnificent view!",
+      "author": "Tinus Lorvaldes",
+      "date": "2018-10-25T16:30Z"
+    },
+    {
+      "id": 10,
+      "productId": 2,
+      "rating": 5,
+      "text": "I caught a world-record-breaking trout here on my last visit.",
+      "author": "McKenzie Sebastian",
+      "date": "2019-02-18T18:12Z"
+    },
+    {
+      "id": 11,
+      "productId": 2,
+      "rating": 5,
+      "text": "A wonderful place to reconnect with nature.",
+      "author": "Jordan Runn",
+      "date": "2019-08-04T20:11Z"
+    },
+    {
+      "id": 12,
+      "productId": 2,
+      "rating": 4,
+      "text": "The stars at night were a revelation!",
+      "author": "Ann Dabramov",
+      "date": "2018-07-23T19:44Z"
+    },
+    {
+      "id": 13,
+      "productId": 2,
+      "rating": 5,
+      "text": "What a magnificent view!",
+      "author": "Tinus Lorvaldes",
+      "date": "2018-10-25T16:30Z"
+    },
+    {
+      "id": 14,
+      "productId": 2,
+      "rating": 4,
+      "text": "The campground was beautiful, but the bugs could bite sometimes.",
+      "author": "Brennen Ech",
+      "date": "2017-06-17T03:33Z"
+    },
+    {
+      "id": 15,
+      "productId": 3,
+      "rating": 5,
+      "text": "A wonderful place to reconnect with nature.",
+      "author": "Jordan Runn",
+      "date": "2019-08-04T20:11Z"
+    },
+    {
+      "id": 16,
+      "productId": 3,
+      "rating": 4,
+      "text": "The stars at night were a revelation!",
+      "author": "Ann Dabramov",
+      "date": "2018-07-23T19:44Z"
+    },
+    {
+      "id": 17,
+      "productId": 3,
+      "rating": 5,
+      "text": "What a magnificent view!",
+      "author": "Tinus Lorvaldes",
+      "date": "2018-10-25T16:30Z"
+    },
+    {
+      "id": 18,
+      "productId": 3,
+      "rating": 4,
+      "text": "The campground was beautiful, but the bugs could bite sometimes.",
+      "author": "Brennen Ech",
+      "date": "2017-06-17T03:33Z"
+    },
+    {
+      "id": 19,
+      "productId": 3,
+      "rating": 5,
+      "text": "I caught a world-record-breaking trout here on my last visit.",
+      "author": "McKenzie Sebastian",
+      "date": "2019-02-18T18:12Z"
+    }
+  ],
+  "feedback": [
+    {
+      "id": 0,
+      "firstname": "Test",
+      "lastname": "Test",
+      "phoneNum": "12345",
+      "email": "test@test.com",
+      "agree": true,
+      "contactType": "Email",
+      "feedback": "test"
+    }
+  ]
+}
