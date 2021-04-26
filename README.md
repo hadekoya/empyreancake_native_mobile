@@ -6,9 +6,10 @@ This is the mobile app codebase for NJ based Empyrean Cake. Implemented in React
 
 - Yarn
 - Expo
-- `yarn global add expo-cli@3`
+  `yarn global add expo-cli@3`
 
-- `expo --version`
+`expo --version`
+
 - JSON Server (local machine/development only)
 
 `yarn global add json-server`
@@ -50,6 +51,10 @@ Enter the following command into your terminal, inside your project folder:
 ### Install custom React Native Date Time Picker
 
 - `expo install @react-native-community/datetimepicker`
+
+### Install Redux and related packages
+
+-`expo install redux@4.0.5 react-redux@7.2.0 redux-thunk@2.3.0 redux-logger@3.0.6`
 
 ## Run App Locally
 
