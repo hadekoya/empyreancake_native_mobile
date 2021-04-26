@@ -2,3 +2,6 @@ export const FEATURES_LOADING = "FEATURES_LOADING";
 
 export const ADD_FEATURES = "ADD_FEATURES";
 export const FEATURES_FAILED = "FEATURES_FAILED";
+
+export const ADD_CAKES = "ADD_CAKES";
+export const CAKES_FAILED = "CAKES_FAILED";

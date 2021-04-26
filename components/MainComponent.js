@@ -17,21 +17,48 @@ import SafeAreaView from "react-native-safe-area-view";
 import { connect } from "react-redux";
 
 import Home from "./HomeComponent";
-// import Directory from "./DirectoryComponent";
+import Productdetails from "./Productdetails";
 // import About from "./AboutComponent";
 // import Contact from "./ContactComponent";
 
 // import CampsiteInfo from "./CampsiteInfoComponent";
 import { fetchFeatures } from "../redux/ActionCreators";
+import { fetchCakes } from "../redux/ActionCreators";
 // import Reservation from "./ReservationComponent";
 
 const mapDispatchToProps = {
   fetchFeatures,
+  fetchCakes,
 };
 
 const HomeNavigator = createStackNavigator(
   {
     Home: { screen: Home },
+  },
+  {
+    defaultNavigationOptions: ({ navigation }) => ({
+      headerStyle: {
+        backgroundColor: "#193b76",
+      },
+      headerTintColor: "#fff",
+      headerTitleStyle: {
+        color: "#fff",
+      },
+      headerLeft: (
+        <Icon
+          name="home"
+          type="font-awesome"
+          iconStyle={styles.stackIcon}
+          onPress={() => navigation.toggleDrawer()}
+        />
+      ),
+    }),
+  }
+);
+
+const ProductNavigator = createStackNavigator(
+  {
+    Productdetails: { screen: Productdetails },
   },
   {
     defaultNavigationOptions: ({ navigation }) => ({
@@ -61,6 +88,15 @@ const MainNavigator = createDrawerNavigator(
       navigationOptions: {
         drawerIcon: ({ tintColor }) => (
           <Icon name="home" type="font-awesome" size={24} color={tintColor} />
+        ),
+      },
+    },
+    Productdetails: {
+      screen: ProductNavigator,
+      navigationOptions: {
+        drawerLabel: "Product Catalog",
+        drawerIcon: ({ tintColor }) => (
+          <Icon name="heart" type="font-awesome" size={24} color={tintColor} />
         ),
       },
     },
@@ -105,6 +141,7 @@ const styles = StyleSheet.create({
 class Main extends Component {
   componentDidMount() {
     this.props.fetchFeatures();
+    this.props.fetchCakes();
   }
   render() {
     return (
