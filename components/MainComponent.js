@@ -21,7 +21,7 @@ import Productdetails from "./Productdetails";
 // import About from "./AboutComponent";
 // import Contact from "./ContactComponent";
 
-// import CampsiteInfo from "./CampsiteInfoComponent";
+import ProductInfo from "./ProductInfoComponent";
 import { fetchFeatures } from "../redux/ActionCreators";
 import { fetchCakes } from "../redux/ActionCreators";
 // import Reservation from "./ReservationComponent";
@@ -56,12 +56,51 @@ const HomeNavigator = createStackNavigator(
   }
 );
 
+// const ProductNavigator = createStackNavigator(
+//   {
+//     Productdetails: { screen: Productdetails },
+//   },
+//   {
+//     defaultNavigationOptions: ({ navigation }) => ({
+//       headerStyle: {
+//         backgroundColor: "#193b76",
+//       },
+//       headerTintColor: "#fff",
+//       headerTitleStyle: {
+//         color: "#fff",
+//       },
+//       headerLeft: (
+//         <Icon
+//           name="home"
+//           type="font-awesome"
+//           iconStyle={styles.stackIcon}
+//           onPress={() => navigation.toggleDrawer()}
+//         />
+//       ),
+//     }),
+//   }
+// );
+
 const ProductNavigator = createStackNavigator(
   {
-    Productdetails: { screen: Productdetails },
+    Productdetails: {
+      screen: Productdetails,
+      navigationOptions: ({ navigation }) => ({
+        headerLeft: (
+          <Icon
+            name="list"
+            type="font-awesome"
+            iconStyle={styles.stackIcon}
+            onPress={() => navigation.toggleDrawer()}
+          />
+        ),
+      }),
+    },
+    ProductInfo: { screen: ProductInfo },
   },
   {
-    defaultNavigationOptions: ({ navigation }) => ({
+    initialRouteName: "Productdetails",
+    defaultNavigationOptions: {
       headerStyle: {
         backgroundColor: "#193b76",
       },
@@ -69,15 +108,7 @@ const ProductNavigator = createStackNavigator(
       headerTitleStyle: {
         color: "#fff",
       },
-      headerLeft: (
-        <Icon
-          name="home"
-          type="font-awesome"
-          iconStyle={styles.stackIcon}
-          onPress={() => navigation.toggleDrawer()}
-        />
-      ),
-    }),
+    },
   }
 );
 
