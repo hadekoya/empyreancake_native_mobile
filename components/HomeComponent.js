@@ -30,9 +30,10 @@ function RenderFeatures(props) {
   console.log(props);
   const RenderFeaturesItem = ({ item }) => {
     return (
-      <Card style={styles.cardStyle} image={{ uri: baseUrl + item.image }}>
-        {/* <Text style={{ margin: 10 }}>{item.header}</Text> */}
-      </Card>
+      <Card
+        style={styles.cardStyle}
+        image={{ uri: baseUrl + item.image }}
+      ></Card>
     );
   };
 

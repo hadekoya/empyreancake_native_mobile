@@ -1,25 +1,16 @@
 import React, { Component } from "react";
 
-import {
-  View,
-  Platform,
-  StyleSheet,
-  Text,
-  ScrollView,
-  Image,
-  TouchableOpacity,
-} from "react-native";
+import { View, Platform, StyleSheet } from "react-native";
 import { createStackNavigator } from "react-navigation-stack";
 import { createDrawerNavigator, DrawerItems } from "react-navigation-drawer";
 import { createAppContainer } from "react-navigation";
-import { Icon } from "react-native-elements";
-import SafeAreaView from "react-native-safe-area-view";
+import { Icon, colors } from "react-native-elements";
 import { connect } from "react-redux";
 
 import Home from "./HomeComponent";
 import Productdetails from "./Productdetails";
 // import About from "./AboutComponent";
-// import Contact from "./ContactComponent";
+import Contact from "./ContactComponent";
 
 import ProductInfo from "./ProductInfoComponent";
 import { fetchFeatures } from "../redux/ActionCreators";
@@ -56,31 +47,6 @@ const HomeNavigator = createStackNavigator(
   }
 );
 
-// const ProductNavigator = createStackNavigator(
-//   {
-//     Productdetails: { screen: Productdetails },
-//   },
-//   {
-//     defaultNavigationOptions: ({ navigation }) => ({
-//       headerStyle: {
-//         backgroundColor: "#193b76",
-//       },
-//       headerTintColor: "#fff",
-//       headerTitleStyle: {
-//         color: "#fff",
-//       },
-//       headerLeft: (
-//         <Icon
-//           name="home"
-//           type="font-awesome"
-//           iconStyle={styles.stackIcon}
-//           onPress={() => navigation.toggleDrawer()}
-//         />
-//       ),
-//     }),
-//   }
-// );
-
 const ProductNavigator = createStackNavigator(
   {
     Productdetails: {
@@ -112,6 +78,31 @@ const ProductNavigator = createStackNavigator(
   }
 );
 
+const ContactNavigator = createStackNavigator(
+  {
+    Contact: { screen: Contact },
+  },
+  {
+    defaultNavigationOptions: ({ navigation }) => ({
+      headerStyle: {
+        backgroundColor: "#193b76",
+      },
+      headerTintColor: "#fff",
+      headerTitleStyle: {
+        color: "#fff",
+      },
+      headerLeft: (
+        <Icon
+          name="address-card"
+          type="font-awesome"
+          iconStyle={styles.stackIcon}
+          onPress={() => navigation.toggleDrawer()}
+        />
+      ),
+    }),
+  }
+);
+
 const MainNavigator = createDrawerNavigator(
   {
     Home: {
@@ -131,8 +122,33 @@ const MainNavigator = createDrawerNavigator(
         ),
       },
     },
+    Contact: {
+      screen: ContactNavigator,
+      navigationOptions: {
+        drawerLabel: "Contact Us",
+        drawerIcon: ({ tintColor }) => (
+          <Icon
+            name="address-card"
+            type="font-awesome"
+            size={24}
+            color={tintColor}
+          />
+        ),
+      },
+    },
   },
+
   {
+    contentOptions: {
+      activeTintColor: colors.primary,
+      activeBackgroundColor: "transparent",
+      inactiveTintColor: "black",
+      inactiveBackgroundColor: "transparent",
+      labelStyle: {
+        fontSize: 15,
+        marginLeft: 10,
+      },
+    },
     drawerBackgroundColor: "#193b76",
     //contentComponent: CustomDrawerContentComponent,
   }

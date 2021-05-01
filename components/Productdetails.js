@@ -36,8 +36,6 @@ class Productdetails extends Component {
     console.log("selecionado: " + item);
   };
   render() {
-    //console.log("DEBUG");
-    //console.log(this.props);
     const { navigate } = this.props.navigation;
     const buttons = ["All", "Birthday", "Wedding", "Cupcake", "Custom"];
     return (
@@ -53,7 +51,7 @@ class Productdetails extends Component {
       //       containerBorderRadius={0}
       //     />
       //     <Divider style={{ backgroundColor: "grey" }} />
-      //     <SafeAreaView style={styles.container}>
+
       <FlatList
         style={{ margin: 5 }}
         data={this.props.cakes.cakes}
@@ -73,38 +71,8 @@ class Productdetails extends Component {
               <Text>{item.item.name}</Text>
             </View>
           </TouchableOpacity>
-
-          //   <Tile
-          //     title={item.name}
-          //     caption={item.description}
-          //     featured
-          //     onPress={() => this.selectedCake(item.item)}
-          //     imageSrc={{ uri: baseUrl + item.item.image }}
-          //     imageContainerStyle={{
-          //       width: 150,
-          //       borderTopLeftRadius: 10,
-          //       borderTopRightRadius: 10,
-          //       //resizeMode: "contain",
-          //     }}
-          //   />
-
-          // <Card
-          //   style={styles.boxCon}
-          //   key={item.item.id}
-          //   image={{ uri: baseUrl + item.item.image }}
-          //   imageStyle={{
-          //     width: 150,
-          //     borderTopLeftRadius: 10,
-          //     borderTopRightRadius: 10,
-          //     //resizeMode: "contain",
-          //   }}
-          //   onPress={() => this.selectedCake(item.item)}
-          // >
-          //   <Text style={styles.text}>{item.item.name}</Text>
-          // </Card>
         )}
       />
-      //     </SafeAreaView>
       //   </ScrollView>
     );
   }
@@ -132,37 +100,14 @@ const styles = StyleSheet.create({
   },
 
   boxCon: {
-    // margin: 15,
-    // marginHorizontal: 10,
-    // marginBottom: 17.5,
     borderColor: "#FFFFFF",
     shadowColor: "#000",
-    // shadowOffset: { width: 0, height: 2 },
-    // shadowOpacity: 0.3,
-    // shadowRadius: 5,
-    // elevation: 5,
-    // borderRadius: 10,
   },
-
-  //   container: {
-  //     width: "100%",
-  //     height: 200,
-  //     marginBottom: 25,
-  //     borderRadius: 15,
-  //     backgroundColor: "#FFFFFF",
-  //     overflow: "hidden",
-  //   },
 
   image: {
     width: "80%",
     height: "70%",
   },
-
-  //   textContainer: {
-  //     flex: 1,
-  //     alignItems: "center",
-  //     justifyContent: "center",
-  //   },
 
   text: {
     fontWeight: "bold",

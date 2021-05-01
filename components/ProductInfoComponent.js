@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import {
-  Text,
+  //   Text,
   View,
   ScrollView,
   FlatList,
@@ -9,9 +9,10 @@ import {
   StyleSheet,
   Alert,
   PanResponder,
+  Image,
 } from "react-native";
 
-import { Card, Icon, Input, Rating } from "react-native-elements";
+import { Card, Icon, Input, Rating, Text, Badge } from "react-native-elements";
 import { connect } from "react-redux";
 import { baseUrl } from "../shared/baseUrl";
 // import { postFavorite } from "../redux/ActionCreators";
@@ -30,9 +31,23 @@ function RenderProduct(props) {
   if (cake) {
     return (
       <View>
-        <Card featuredTitle={cake.name} image={{ uri: baseUrl + cake.image }}>
-          <Text style={{ margin: 10 }}>{cake.description}</Text>
-        </Card>
+        <Text h4>{cake.name}</Text>
+        {/* <Image source={{ uri: baseUrl + cake.image }} /> */}
+        <Card image={{ uri: baseUrl + cake.image }}></Card>
+        <Text h4>Description</Text>
+        <Text style={{ margin: 10 }}>{cake.description}</Text>
+        <Text h4>{cake.price}</Text>
+        <Rating
+          style={styles.leftJustified}
+          imageSize={20}
+          readonly
+          startingValue={cake.ratings}
+        />
+        <Badge
+          style={styles.leftJustified}
+          status="warning"
+          value={<Text>{cake.category} </Text>}
+        />
       </View>
     );
   }
@@ -50,28 +65,8 @@ class ProductInfo extends Component {
     this.setState({ showModal: !this.state.showModal });
   }
 
-  //   handleComment(campsiteId) {
-  //     //console.log(JSON.stringify(this.state));
-  //     this.props.postComment(
-  //       campsiteId,
-  //       this.state.rating,
-  //       this.state.author,
-  //       this.state.text
-  //     );
-  //     this.toggleModal();
-  //   }
-  //   resetForm() {
-  //     this.setState({
-  //       rating: 5,
-  //       author: "",
-  //       text: "",
-  //     });
-  //   }
-  //   markFavorite(campsiteId) {
-  //     this.props.postFavorite(campsiteId);
-  //   }
   static navigationOptions = {
-    title: "Product Information",
+    title: "Product Detail",
   };
 
   render() {
@@ -79,65 +74,10 @@ class ProductInfo extends Component {
     const product = this.props.cakes.cakes.filter(
       (cake) => cake.id === productId
     )[0];
-    //   const comments = this.props.comments.comments.filter(
-    //     (comment) => comment.campsiteId === campsiteId
-    //   );
+
     return (
       <ScrollView>
         <RenderProduct cake={product} />
-        {/* <RenderComments comments={comments} /> */}
-
-        {/* <Modal
-          animationType={"slide"}
-          transparent={false}
-          visible={this.state.showModal}
-          onRequestClose={() => this.toggleModal()}
-        >
-          <View style={styles.modal}>
-            <View style={{ margin: 10 }}>
-              <Rating
-                showRating
-                startingValue={this.state.rating}
-                imageSize={40}
-                onFinishRating={(rating) => this.setState({ rating: rating })}
-                style={{ paddingVertical: 10 }}
-              />
-
-              <Input
-                placeholder="Author"
-                onChangeText={(value) => this.setState({ author: value })}
-                leftIcon={{ type: "font-awesome", name: "user-o" }}
-                leftIconContainerStyle={{ paddingRight: 10 }}
-                value={this.state.author}
-              />
-
-              <Input
-                placeholder="Comment"
-                onChangeText={(value) => this.setState({ text: value })}
-                leftIcon={{ type: "font-awesome", name: "comment-o" }}
-                leftIconContainerStyle={{ paddingRight: 10 }}
-                value={this.state.text}
-              />
-
-              <Button
-                onPress={() => this.handleComment(campsiteId)}
-                color="#5637DD"
-                title="Submit"
-              />
-            </View>
-
-            <View style={{ margin: 10 }}>
-              <Button
-                onPress={() => {
-                  this.toggleModal();
-                  this.resetForm();
-                }}
-                color="#808080"
-                title="Cancel"
-              />
-            </View>
-          </View>
-        </Modal> */}
       </ScrollView>
     );
   }
@@ -151,6 +91,10 @@ const styles = StyleSheet.create({
     margin: 20,
   },
 
+  leftJustified: {
+    alignItems: "flex-start",
+    // justifyContent: "flex-start",
+  },
   modal: {
     justifyContent: "center",
     margin: 20,
