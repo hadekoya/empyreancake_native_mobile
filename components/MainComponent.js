@@ -109,6 +109,7 @@ const MainNavigator = createDrawerNavigator(
       screen: HomeNavigator,
       navigationOptions: {
         drawerIcon: ({ tintColor }) => (
+          
           <Icon name="home" type="font-awesome" size={24} color={tintColor} />
         ),
       },

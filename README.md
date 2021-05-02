@@ -96,3 +96,7 @@ Start JSON Server for local APIs
 - Open baseURL.js with your favorite editor and replace 10.0.0.188 with your local machine's IP address
 
 Find your local IP address on windows: `ipconfig` on Mac: `ipconfig getifaddr en0`
+
+## UI Workflow
+
+![Screenshot](docs/Screenshot.png)
